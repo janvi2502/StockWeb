@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stock Web</title>
+    <link rel="stylesheet" href="Reset1.css" />
+    <link rel="icon" href="Images/Screenshot (48).png" type="image/png" />
+    <script>
+      var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+          sURLVariables = sPageURL.split("&"),
+          sParameterName,
+          i;
+        for (i = 0; i < sURLVariables.length; i++) {
+          sParameterName = sURLVariables[i].split("=");
+          if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined
+              ? true
+              : decodeURIComponent(sParameterName[1]);
+          }
+        }
+      };
+      if (getUrlParameter("register") == "true") {
+        document.getElementById("flipcard-inner").style.transform =
+          "rotateY(180deg)";
+      }
+
+      function matchpass() {
+        var firstpassword = f1.password1.value;
+        var secondpassword = f1.password2.value;
+
+        if (firstpassword == secondpassword) {
+          alert("You'd changed your password successfully");
+        } else {
+          alert("Password are not same!!");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <input type="checkbox" id="form_switch" style="display: none" />
+      <div class="flipcard">
+        <div class="flipcard-inner">
+          <div class="flipcard-front">
+            <form class="login-form" action="" name="f1" onsubmit="matchpass()">
+              <div class="form-header">
+                <h3 style="font-size: 25px">Change Password</h3>
+                <p>Get you new password successfully</p>
+              </div>
+              <!--Change your current password-->
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-input"
+                  name="cpass"
+                  placeholder="Current Password"
+                  required
+                />
+              </div>
+              <!--Password Input-->
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-input"
+                  name="password1"
+                  placeholder=" New Password"
+                  required
+                />
+              </div>
+              <!--Password Input-->
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-input"
+                  name="password2"
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
+              <!--Login Button-->
+              <div class="form-group">
+                <button class="form-button" type="submit">Submit</button>
+              </div>
+              <div class="form-footer">
+                Need more help.
+                <label
+                  class="label-highlight"
+                  for="form_switch"
+                  style="cursor: pointer"
+                >
+                  Forget Password?</label
+                >
+              </div>
+            </form>
+          </div>
+          <!--Reset password when you don't remember that-->
+          <div class="flipcard-back">
+            <form class="login-form" action="">
+              <div class="form-header">
+                <h3 style="font-size: 25px">Forget Password</h3>
+                <p>Get help in logging in</p>
+              </div>
+              <!--Email Input-->
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="email"
+                  placeholder="email@example.com"
+                />
+              </div>
+              <!--Password Input-->
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="username"
+                  placeholder="username"
+                />
+              </div>
+              <!--Login Button-->
+              <div class="form-group">
+                <button class="form-button" type="submit">Reset</button>
+              </div>
+              <div class="form-footer">
+                Check your Email!
+                <label
+                  class="label-highlight"
+                  for="form_switch"
+                  style="cursor: pointer"
+                >
+                  Security</label
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

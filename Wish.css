@@ -1,0 +1,96 @@
+body {
+  margin-top: 20px;
+  color: #fff;
+  background: url(Images/bgimage1.jpg);
+  font-family: sans-serif;
+}
+.account-settings .user-profile {
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.account-settings .user-profile .user-avatar {
+  margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+  width: 90px;
+  height: 90px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.account-settings .user-profile h5.user-name {
+  margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.account-settings .about {
+  margin: 1rem 0 0 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.card {
+  background-color: rgb(0, 0, 0, 0.6);
+  opacity: 85%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 1rem;
+}
+.form-control {
+  border: 1px solid grey;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 0.825rem;
+  background: #cfcfcf;
+  color: black;
+}
+.about-section {
+  color: #f44336;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.box-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 6px;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.box-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+  color: #fff;
+}
+.box-btn1 {
+  display: inline-block;
+  text-decoration: none;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 6px;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.box-btn1:hover {
+  border: 1px solid #5c5c5c;
+  background: #5c5c5c;
+  transition: 1s;
+  color: #fff;
+}
+#a3 {
+  border: 0;
+  background: transparent;
+}

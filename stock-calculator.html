@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url(Images/bgimage.jpg);
+        margin-top: 10px;
+        background-position: center;
+        background-size: cover;
+        font-family: sans-serif;
+      }
+
+      .regform {
+        width: 800px;
+        background-color: rgb(0, 0, 0, 0.6);
+        margin: auto;
+        color: #ffffff;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+      }
+      .main {
+        background-color: rgb(0, 0, 0, 0.5);
+        width: 800px;
+        margin: auto;
+      }
+
+      form {
+        padding: 10px;
+      }
+      .name {
+        margin-left: 25px;
+        margin-top: 10px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .company {
+        position: relative;
+        left: 300px;
+        top: -37px;
+        line-height: 40px;
+        width: 400px;
+        border-radius: 6px;
+        padding: 0px 20px;
+        font-size: 16px;
+        color: #555;
+      }
+      button {
+        background-color: #3baf9f;
+        display: inline;
+        margin: 50px;
+        margin-top: -4px;
+        margin-bottom: 17px;
+        text-align: center;
+        border-radius: 12px;
+        border: 2px solid #366473;
+        padding: 14px 110px;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        transition: 0.25px;
+      }
+      button:hover {
+        background-color: #5390f5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="regform">
+      <h1>STOCK CALCULATOR</h1>
+    </div>
+    <div class="main">
+      <form method="POST">
+        <h2 class="name">Number Of Scripts:</h2>
+        <input class="company" type="number" id="num" onchange="stock();" />
+        <h2 class="name">Date Of Purchase:</h2>
+        <input class="company" type="date" id="h1" onchange="stock();" />
+        <h2 class="name">Date Of Sale:</h2>
+        <input class="company" type="date" id="h2" onchange="stock();" />
+        <h2 class="name">Purchase Price Per Share:</h2>
+        <input
+          class="company"
+          type="number"
+          id="purprice"
+          onchange="stock();"
+        />
+        <h2 class="name">Sale Price Per Share:</h2>
+        <input
+          class="company"
+          type="number"
+          id="saleprice"
+          onchange="stock();"
+        />
+        <h2 class="name">Dividend received:</h2>
+        <input class="company" type="number" id="div" onchange="stock();" />
+        <h2 class="name">Brokerage + Tax:</h2>
+        <input class="company" type="number" id="stt" onchange="stock();" />
+
+        <button type="reset">RESET</button>
+        <button type="button" onclick="stock();">SUBMIT</button>
+        <h2 class="name">Net Return:</h2>
+        <input class="company op" type="text" id="nroi" />
+        <h2 class="name b">Annualised Return:</h2>
+        <input class="company op" type="text" id="arr" />
+      </form>
+    </div>
+    <script>
+      function stock() {
+        var num = document.getElementById("num").value;
+        var div = document.getElementById("div").value;
+        var purprice = document.getElementById("purprice").value;
+        var saleprice = document.getElementById("saleprice").value;
+        var stt = document.getElementById("stt").value;
+        var purcost = purprice * num;
+        var salecost = saleprice * num;
+        var date1 = document.getElementById("h1").value;
+        var date2 = document.getElementById("h2").value;
+        var pdate = Date.parse(date1);
+        var sdate = Date.parse(date2);
+        var msPerDay = 24 * 60 * 60 * 1000;
+        days = Math.round((sdate * 1 - pdate * 1) / msPerDay);
+        if (
+          num == null ||
+          purprice == null ||
+          sdate == null ||
+          pdate == null ||
+          purcost == null ||
+          salecost == null ||
+          num == 0 ||
+          purprice == 0 ||
+          sdate == 0 ||
+          pdate == 0 ||
+          purcost == 0 ||
+          salecost == 0
+        ) {
+          document.getElementById("nroi").value = document.getElementById(
+            "arr"
+          ).value = "Please enter data";
+        }
+        if (sdate >= pdate) {
+          document.getElementById("nroi").value =
+            salecost * 1 + div * 1 - purcost * 1 - stt * 1;
+          document.getElementById("arr").value =
+            Math.round(
+              (document.getElementById("nroi").value / purcost) *
+                (365 / days) *
+                10000
+            ) /
+              100 +
+            " %";
+        } else if (sdate < pdate) {
+          document.getElementById("arr").value = "Incorrect date";
+          document.getElementById("nroi").value = "Incorrect date";
+          alert(
+            "<b>Error</b> : The Sale Date is prior to the Purchase Date. Please enter correct dates and recalculate."
+          );
+        }
+      }
+    </script>
+  </body>
+</html>

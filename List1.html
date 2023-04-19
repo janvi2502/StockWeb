@@ -1,0 +1,641 @@
+<doctype.html>
+<html>
+<head>
+    <title>Stock Web</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+		<link rel="stylesheet" type="text/css" href="List.css" />
+        <link rel="stylesheet" type="text/css" href="stock.css"/>
+        <link rel="icon" href="Images/Screenshot (48).png" type="image/png" />
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="sub-header">
+      <nav>
+        <a href="stock.html"><img src="Images/Stock_Web.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="stock.html">HOME</a></li>
+            <li><a href="stock2.html">ABOUT</a></li>
+            <li><a href="stock3.html">FEATURES</a></li>
+            <li><a href="stock4.html">SUPPORT</a></li>
+            <li><a href="stock5.html">CONTACT</a></li>
+            <li><a href="Wish.html">PROFILE</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h3>" The stock market is a device for<br> transferring money from the <br> impatient to the patient. "</h3>
+    </section>
+    <section class="stock-web">
+      <h1>KNOW YOUR STOCKS</h1>
+      <p>
+        A stock market, equity market, or share market is the aggregation of buyers and sellers of stocks (also called shares), which represent ownership claims on businesses; these may include securities listed on a public stock exchange, as well as stock that is only traded privately, such as shares of private companies which are sold to investors through equity crowdfunding platforms. Investment in the stock market is most often done via stockbrokerages and electronic trading platforms. Investment is usually made with an investment strategy in mind.
+      </p>
+      <div class="row">
+        <div class="stock-col">
+          <h3>Classification based on stock classes</h3>
+          <p>
+            This is one of the primary factors used to classify stocks and is based on the voting rights of the shareholders. There are some stocks that do not give the shareholders the power to vote at the annual meetings where the decisions regarding the management of the company and such issues take place. Unlike these stocks, there are some other stocks that allow shareholders to participate in the decision making in the company matters, by casting their votes.
+          </p>
+        </div>
+        <div class="stock-col">
+          <h3>Classification based on market capitalization</h3>
+          <p>
+            Stocks can be classified on the basis of the market capitalization of the company, which is the total shareholding of a company. This is calculated by multiplying the current price of the company stock with the total number of shares outstanding in the market.<br>
+              <b>i. Large Cap Stocks</b><br>
+              <b>ii. Mid Cap Stocks</b><br>
+              <b>iii. Small Cap Stocks</b>
+          </p>
+        </div>
+        <div class="stock-col">
+          <h3>Classification based on fundamentals</h3>
+          <p>
+            Investors who believe that a share price must equal the intrinsic value of the company’s share, the value investing investors, compare the share prices with components like per share earnings, profits, etc to reach at an intrinsic value per share.<br>
+              <b>i.  Overvalued Shares</b>
+              These are shares with prices that exceed the intrinsic value and are considered overvalued.<br>
+              <b>ii.  Undervalued Shares</b>
+              These types of shares are popular amongst the value investors as they believe that the price of the share would rise in the future.
+          </p>
+        </div>
+      </div>
+    </section>
+
+	<div class="limiter">
+      <div class="container-table100">
+        <div class="wrap-table100">
+          <div class="table100">
+            <table>
+              <thead>
+                <tr class="table100-head">
+                  <th class="column1">Company</th>
+                  <th class="column2">Current Price(Rs)</th>
+                  <th class="column3">%Change</th>
+                  <th class="column4">Volume</th>
+				  <th class="column5">Equity</th>
+                  <th class="column6">Face Value</th>
+                  <th class="column7">Market Cap(Rs Cr)</th>
+                </tr>
+              </thead>
+       <tbody>
+	<tr>
+		<td class="column1">Reliance Inds.</td>
+		<td class="column2">1,916.55</td>
+		<td class="column3" style="color: red">-2.18</td>
+        <td class="column4">1021839</td>
+		<td class="column5">6,445.10</td>
+		<td class="column6">10</td>
+        <td class="column7">12,35,235.38</td>
+	</tr>
+    <tr>
+		<td class="column1">Tata Consultancy</td>
+		<td class="column2">3,048.95</td>
+		<td class="column3" style="color: green">+0.39</td>
+        <td class="column4">71115</td>
+		<td class="column5">369.91</td>
+		<td class="column6">1</td>
+        <td class="column7">11,27,822.27</td>
+	</tr>
+    <tr>
+		<td class="column1">HDFC Bank</td>
+		<td class="column2">1,388.55</td>
+		<td class="column3" style="color: red">-1.74</td>
+        <td class="column4">443294</td>
+		<td class="column5">551.28</td>
+		<td class="column6">1</td>
+        <td class="column7">7,65,476.58</td>
+	</tr>
+    <tr>
+		<td class="column1">Infosys</td>
+		<td class="column2">1,329.55</td>
+		<td class="column3" style="color: red">-1.65</td>
+        <td class="column4">114114</td>
+		<td class="column5">2,130.33</td>
+		<td class="column6">5</td>
+        <td class="column7">5,66,476.16</td>
+	</tr>
+    <tr>
+		<td class="column1">Hindustan Unilever L</td>
+		<td class="column2">2,408.65</td>
+		<td class="column3" style="color: green">+0.05</td>
+        <td class="column4">92859</td>
+		<td class="column5">234.96</td>
+		<td class="column6">1</td>
+        <td class="column7">5,65,928.65</td>
+	</tr>
+    <tr>
+		<td class="column1">HDFC</td>
+		<td class="column2">2,377.25</td>
+		<td class="column3" style="color: red">-1.73</td>
+        <td class="column4">214271</td>
+		<td class="column5">360.79</td>
+		<td class="column6">2</td>
+        <td class="column7">4,28,843.17</td>
+	</tr>
+    <tr>
+		<td class="column1">ICICI Bank</td>
+		<td class="column2">591.55</td>
+		<td class="column3" style="color: red">-0.91</td>
+        <td class="column4">749806</td>
+		<td class="column5">1,383.33</td>
+		<td class="column6">2</td>
+        <td class="column7">4,09,154.71</td>
+	</tr>
+    <tr>
+		<td class="column1">Kotak Mahindra Bank</td>
+		<td class="column2">1,730.00</td>
+		<td class="column3" style="color: green">+0.33</td>
+        <td class="column4">323236</td>
+        <td class="column5">990.92</td>
+        <td class="column6">5</td>
+        <td class="column7">3,42,857.57</td>
+	</tr>
+    <tr>
+		<td class="column1">SBI</td>
+		<td class="column2">351.60</td>
+		<td class="column3" style="color: green">+0.33</td>
+        <td class="column4">2939675</td>
+		<td class="column5">892.46</td>
+		<td class="column6">1</td>
+        <td class="column7">3,13,789.34</td>
+	</tr>
+    <tr>
+		<td class="column1">Bharti Airtel</td>
+		<td class="column2">550.80</td>
+		<td class="column3" class="re1">-1.41</td>
+        <td class="column4">416848</td>
+		<td class="column5">2,746.01</td>
+		<td class="column6">5</td>
+        <td class="column7">3,02,528.32</td>
+	</tr>
+    <tr>
+		<td class="column1">Wipro Ltd</td>
+		<td class="column2">481.85</td>
+		<td class="column3" style="color: red">-1.16</td>
+        <td class="column4">469869</td>
+		<td class="column5">1,095.83</td>
+		<td class="column6">2</td>
+        <td class="column7">2,64,012.42</td>
+	</tr>
+    <tr>
+		<td class="column1">Asian Paints Ltd.</td>
+		<td class="column2">2,588.15</td>
+		<td class="column3" style="color: green">+0.19</td>
+        <td class="column4">86217</td>
+		<td class="column5">95.92</td>
+		<td class="column6">1</td>
+        <td class="column7">2,48,254.78</td>
+	</tr>
+    <tr>
+		<td class="column1">ITC Ltd.</td>
+		<td class="column2">19.55</td>
+		<td class="column3" style="color: red">-0.70</td>
+        <td class="column4">1459224</td>
+		<td class="column5">1,230.88</td>
+		<td class="column6">1</td>
+        <td class="column7">2,45,622.99</td>
+	</tr>
+    <tr>
+		<td class="column1">HCL Technologies</td>
+		<td class="column2">901.25</td>
+		<td class="column3" style="color: red">-0.68</td>
+        <td class="column4">145529</td>
+		<td class="column5">542.73</td>
+		<td class="column6">2</td>
+        <td class="column7">2,44,569.07</td>
+	</tr>
+    <tr>
+		<td class="column1">Axis Bank Ltd.</td>
+		<td class="column2">700.30</td>
+		<td class="column3" style="color: red">-0.38</td>
+        <td class="column4">531640</td>
+		<td class="column5">612.76</td>
+		<td class="column6">2</td>
+        <td class="column7">2,14,557.45</td>
+	</tr>
+    <tr>
+		<td class="column1">Maruti Suzuki Ltd.</td>
+		<td class="column2">6,508.10</td>
+		<td class="column3" style="color: red">-1.37</td>
+        <td class="column4">32249</td>
+		<td class="column5">151.04</td>
+		<td class="column6">5</td>
+        <td class="column7">1,96,596.72</td>
+	</tr>
+    <tr>
+		<td class="column1">L&T</td>
+		<td class="column2">1,337.65</td>
+		<td class="column3" style="color: red">-0.34</td>
+        <td class="column4">50173</td>
+		<td class="column5">280.91</td>
+		<td class="column6">2</td>
+        <td class="column7">1,87,880.34</td>
+	</tr>
+    <tr>
+		<td class="column1">Avenue Supermarts</td>
+		<td class="column2">2,858.95</td>
+		<td class="column3" style="color: red">-1.33</td>
+        <td class="column4">11954</td>
+		<td class="column5">647.77</td>
+		<td class="column6">10</td>
+        <td class="column7">1,85,`95.55</td>
+	</tr>
+    <tr>
+		<td class="column1">UltraTech Cement</td>
+		<td class="column2">6,302.95</td>
+		<td class="column3" style="color: red">-0.71</td>
+        <td class="column4">8939</td>
+		<td class="column5">288.65</td>
+		<td class="column6">10</td>
+        <td class="column7">1,81,936.79</td>
+	</tr>
+    <tr>
+		<td class="column1">Bajaj Finserv Ltd.</td>
+		<td class="column2">10,988.90</td>
+		<td class="column3" style="color: red">-0.53</td>
+        <td class="column4">23712</td>
+		<td class="column5">79.57</td>
+		<td class="column6">5</td>
+        <td class="column7">1,74,874.55</td>
+	</tr>
+    <tr>
+		<td class="column1">JSW Steel</td>
+		<td class="column2">715.25</td>
+		<td class="column3" style="color: red">-1.11</td>
+        <td class="column4">681114</td>
+		<td class="column5">241.72</td>
+		<td class="column6">1</td>
+        <td class="column7">1,72,891.69</td>
+	</tr>
+    <tr>
+		<td class="column1">Adani Green Energy</td>
+		<td class="column2">1,046.45</td>
+		<td class="column3" style="color: green">+0.96</td>
+        <td class="column4">70426</td>
+		<td class="column5">1,564.01</td>
+		<td class="column6">10</td>
+        <td class="column7">1,63,666.27</td>
+	</tr>
+    <tr>
+		<td class="column1">Nestle India</td>
+		<td class="column2">16,538.10</td>
+		<td class="column3" style="color: green">+0.23</td>
+        <td class="column4">2003</td>
+		<td class="column5">96.42</td>
+		<td class="column6">10</td>
+        <td class="column7">1,59,453.28</td>
+	</tr>
+    <tr>
+		<td class="column1">Adani Ports & Speci</td>
+		<td class="column2">768.80</td>
+		<td class="column3" style="color: green">+0.99</td>
+        <td class="column4">1577079</td>
+		<td class="column5">406.35</td>
+		<td class="column6">2</td>
+        <td class="column7">1,56,201.08</td>
+	</tr>
+    <tr>
+		<td class="column1">Sun Pharma</td>
+		<td class="column2">645.70</td>
+		<td class="column3" style="color: red">-1.99</td>
+        <td class="column4">229355</td>
+		<td class="column5">239.93</td>
+		<td class="column6">1</td>
+        <td class="column7">1,54,925.06</td>
+	</tr>
+    <tr>
+        <td class="column1">Nestle India</td>
+        <td class="column2">16,550.20</td>
+        <td class="column3" style="color: green">+0.07</td>
+        <td class="column4">792</td>
+        <td class="column5">96.42</td>
+        <td class="column6">10</td>
+        <td class="column7">1,59,569.94</td>
+    </tr>
+    <tr>
+        <td class="column1">Adani Ports & Speci</td>
+        <td class="column2">738.20</td>
+        <td class="column3" style="color: red">-3.98</td>
+        <td class="column4">1607331</td>
+        <td class="column5">406.35</td>
+        <td class="column6">2</td>
+        <td class="column7">1,49,983.91</td>
+    </tr>
+    <tr>
+        <td class="column1">ONGC</td>
+        <td class="column2">111.05</td>
+        <td class="column3" style="color: green">+1.28</td>
+        <td class="column4">3191419</td>
+        <td class="column5">6,290.14</td>
+        <td class="column6">5</td>
+        <td class="column7">1,39,704.00</td>
+    </tr>
+    <tr>
+        <td class="column1">Adani Enterprises Lt</td>
+        <td class="column2">1,267.85</td>
+        <td class="column3" style="color: green">+0.45</td>
+        <td class="column4">385917</td>
+        <td class="column5">101.98</td>
+        <td class="column6">1</td>
+        <td class="column7">1,39,439.42</td>
+    </tr>
+    <tr>
+        <td class="column1">Adani Total Gas</td>
+        <td class="column2">1,256.00</td>
+        <td class="column3" style="color: green">+0.28</td>
+        <td class="column4">90014</td>
+        <td class="column5">101.98</td>
+        <td class="column6">1</td>
+        <td class="column7">1,38,136.15</td>
+    </tr>
+    <tr>
+        <td class="column1">HDFC Life Insurance</td>
+        <td class="column2">674.05</td>
+        <td class="column3" style="color: green">+0.91</td>
+        <td class="column4">89412</td>
+        <td class="column5">2,020.94</td>
+        <td class="column6">10</td>
+        <td class="column7">1,36,221.73</td>
+    </tr>
+    <tr>
+        <td class="column1">Titan Company</td>
+        <td class="column2">1,427.65</td>
+        <td class="column3" style="color: green">+0.70</td>
+        <td class="column4">108326</td>
+        <td class="column5">88.78</td>
+        <td class="column6">1</td>
+        <td class="column7">1,26,744.79</td>
+    </tr>
+    <tr>
+        <td class="column1">Hind Zinc</td>
+        <td class="column2">288.15</td>
+        <td class="column3" style="color: red">-0.83</td>
+        <td class="column4">107684</td>
+        <td class="column5">845.06</td>
+        <td class="column6">2</td>
+        <td class="column7">1,21,752.57</td>
+    </tr>
+    <tr>
+        <td class="column1">Tata Steel</td>
+        <td class="column2">1,068.95</td>
+        <td class="column3" style="color: green">+0.46</td>
+        <td class="column4">923316</td>
+        <td class="column5">1,126.49</td>
+        <td class="column6">10</td>
+        <td class="column7">1,20,416.11</td>
+    </tr>
+    <tr>
+        <td class="column1">Adani Transmission L</td>
+        <td class="column2">1,088.45</td>
+        <td class="column3" style="color: green">+2.16</td>
+        <td class="column4">37187</td>
+        <td class="column5">1,099.81</td>
+        <td class="column6">10</td>
+        <td class="column7">1,19,708.83</td>
+    </tr>
+    <tr>
+        <td class="column1">Power Grid Corpo</td>
+        <td class="column2">218.50</td>
+        <td class="column3" style="color: green">+0.23</td>
+        <td class="column4">148512</td>
+        <td class="column5">5,231.59</td>
+        <td class="column6">10</td>
+        <td class="column7">1,14,310.23</td>
+    </tr>
+    <tr>
+        <td class="column1">Bajaj Auto Ltd.</td>
+        <td class="column2">3,845.40</td>
+        <td class="column3" style="color: green">+0.41</td>
+        <td class="column4">10409</td>
+        <td class="column5">289.37</td>
+        <td class="column6">10</td>
+        <td class="column7">1,11,273.19</td>
+    </tr>
+    <tr>
+        <td class="column1">Divi's Lab</td>
+        <td class="column2">4,035.25</td>
+        <td class="column3" style="color: green">+1.20</td>
+        <td class="column4">35433</td>
+        <td class="column5">53.09</td>
+        <td class="column6">2</td>
+        <td class="column7">1,07,123.21</td>
+    </tr>
+    <tr>
+        <td class="column1">NTPC</td>
+        <td class="column2">103.80</td>
+        <td class="column3" style="color: green">0.00</td>
+        <td class="column4">521618</td>
+        <td class="column5">9,696.67</td>
+        <td class="column6">10</td>
+        <td class="column7">1,00,651.39</td>
+    </tr>
+    <tr>
+        <td class="column1">Shree Cement</td>
+        <td class="column2">27,856.45</td>
+        <td class="column3" style="color: green">+0.37</td>
+        <td class="column4">507</td>
+        <td class="column5">36.08</td>
+        <td class="column6">10</td>
+        <td class="column7">1,00,508.16</td>
+    </tr>
+    <tr>
+        <td class="column1">Vedanta</td>
+        <td class="column2">565.00</td>
+        <td class="column3" style="color: green">+2.79</td>
+        <td class="column4">980911</td>
+        <td class="column5">371.72</td>
+        <td class="column6">1</td>
+        <td class="column7">98,505.71</td>
+    </tr>
+    <tr>
+        <td class="column1">SBI Life Insurance</td>
+        <td class="column2">972.70</td>
+        <td class="column3" style="color: red">-1.07</td>
+        <td class="column4">270048</td>
+        <td class="column5">1,000.07</td>
+        <td class="column6">10</td>
+        <td class="column7">97,276.90</td>
+    </tr>
+    <tr>
+        <td class="column1">Tata Motors Ltd.</td>
+        <td class="column2">291.50</td>
+        <td class="column3" style="color: green">+ 0.74</td>
+        <td class="column4">1498517</td>
+        <td class="column5">664.06</td>
+        <td class="column6">2</td>
+        <td class="column7">96,786.97</td>
+    </tr>
+    <tr>
+        <td class="column1">Dabur India</td>
+        <td class="column2">542.00</td>
+        <td class="column3" style="color: green">+0.88</td>
+        <td class="column4">27420</td>
+        <td class="column5">176.74</td>
+        <td class="column6">1</td>
+        <td class="column7">95,794.45</td>
+    </tr>
+    <tr>
+        <td class="column1">Grasim Inds.</td>
+        <td class="column2">1,419.75</td>
+        <td class="column3" style="color: green">+0.26</td>
+        <td class="column4">109798</td>
+        <td class="column5">131.61</td>
+        <td class="column6">2</td>
+        <td class="column7">93,425.92</td>
+    </tr>
+    <tr>
+        <td class="column1">Tech Mahindra</td>
+        <td class="column2">961.71</td>
+        <td class="column3" style="color: green">+ 0.09</td>
+        <td class="column4">189394</td>
+        <td class="column5">484.13</td>
+        <td class="column6">5</td>
+        <td class="column7">93,117.57</td>
+    </tr>
+    <tr>
+        <td class="column1">Mahi & Mahi</td>
+        <td class="column2">748.60</td>
+        <td class="column3" style="color: green">+1.03</td>
+        <td class="column4">104407</td>
+        <td class="column5">621.60</td>
+        <td class="column6">5</td>
+        <td class="column7">93,065.39</td>
+    </tr>
+    <tr>
+        <td class="column1">Bharat Petroleum</td>
+        <td class="column2">424.75</td>
+        <td class="column3" style="color: green">+0.75</td>
+        <td class="column4">428023</td>
+        <td class="column5">2,169.25</td>
+        <td class="column6">10</td>
+        <td class="column7">92,139.01</td>
+    </tr>
+    <tr>
+        <td class="column1">Pidilite Inds.</td>
+        <td class="column2">1,812.05</td>
+        <td class="column3" style="color: green">+0.63</td>
+        <td class="column4">12255</td>
+        <td class="column5">50.82</td>
+        <td class="column6">1</td>
+        <td class="column7">92,079.93</td>
+    </tr>
+    <tr>
+        <td class="column1">SBI Cards and Pay</td>
+        <td class="column2">965.65</td>
+        <td class="column3" style="color: green">+0.97</td>
+        <td class="column4">98884</td>
+        <td class="column5">940.53</td>
+        <td class="column6">10</td>
+        <td class="column7">90,821.84</td>
+    </tr>
+    <tr>
+        <td class="column1">Indian Oil Corp</td>
+        <td class="column2">92.20</td>
+        <td class="column3" style="color: green">+0.93</td>
+        <td class="column4">911684</td>
+        <td class="column5">9,414.16</td>
+        <td class="column6">10</td>
+        <td class="column7">86,798.55</td>
+    </tr>
+    <tr>
+        <td class="column1">Dr. Reddy's Lab</td>
+        <td class="column2">5,160.60</td>
+        <td class="column3" style="color: green">+1.84</td>
+        <td class="column4">65175</td>
+        <td class="column5">83.15</td>
+        <td class="column6">5</td>
+        <td class="column7">85,821.41</td>
+    </tr>
+    <tr>
+        <td class="column1">Britannia Ind</td>
+        <td class="column2">3,451.30</td>
+        <td class="column3" style="color: green">+0.49</td>
+        <td class="column4">11748</td>
+        <td class="column5">24.09</td>
+        <td class="column6">1</td>
+        <td class="column7">83,130.87</td>
+    </tr>
+    <tr>
+        <td class="column1">Hindalco Indus.</td>
+        <td class="column2">367.25</td>
+        <td class="column3" style="color: green">+1.27</td>
+        <td class="column4">771469</td>
+        <td class="column5">224.67</td>
+        <td class="column6">1</td>
+        <td class="column7">82,509.48</td>
+    </tr>
+    <tr>
+        <td class="column1">Coal India</td>
+        <td class="column2">133.00</td>
+        <td class="column3" style="color: green">+0.15</td>
+        <td class="column4">392006</td>
+        <td class="column5">6162.73</td>
+        <td class="column6">10</td>
+        <td class="column7">81,964.29</td>
+    </tr>
+    <tr>
+        <td class="column1">ICICI Pru Life</td>
+        <td class="column2">557.50</td>
+        <td class="column3" style="color: green">+0.70</td>
+        <td class="column4">244547</td>
+        <td class="column5">1,435.97</td>
+        <td class="column6">10</td>
+        <td class="column7">80,055.56</td>
+    </tr>
+    <tr>
+        <td class="column1">Godrej Consumer Prod</td>
+        <td class="column2">706.90</td>
+        <td class="column3" style="color: green">+1.23</td>
+        <td class="column4">24977</td>
+        <td class="column5">102.25</td>
+        <td class="column6">1</td>
+        <td class="column7">72,279.56</td>
+    </tr>
+    <tr>
+        <td class="column1">Indusland Bank</td>
+        <td class="column2">931.35</td>
+        <td class="column3" style="color: green">+2.33</td>
+        <td class="column4">426912</td>
+        <td class="column5">773.37</td>
+        <td class="column6">10</td>
+        <td class="column7">72,028.03</td>
+    </tr>
+    <tr>
+        <td class="column1">Cipla</td>
+        <td class="column2">888.70</td>
+        <td class="column3" style="color: green">+1.16</td>
+        <td class="column4">657014</td>
+        <td class="column5">161.29</td>
+        <td class="column6">2</td>
+        <td class="column7">71,670.39</td>
+    </tr>
+    <tr> 
+        <td class="column1">MothersonSumiSystems</td>	
+        <td class="column2">219.90</td>	
+        <td class="column3" style="color: green">+ 1.48</td>	
+        <td class="column4">652314</td>
+        <td class="column5">315.79</td>
+        <td class="column6">1</td>	
+        <td class="column7">69,442.97</td>
+    </tr>
+    <tr>
+        <td class="column1">Berger Paints I</td>
+        <td class="column2">712.50</td>	
+        <td class="column3" style="color: green">+ 0.86</td>
+        <td class="column4">37684</td>
+        <td class="column5">97.13</td>
+        <td class="column6">1</td>
+        <td class="column7">69,204.77</td>
+    </tr>
+	</tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
